@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px minmax(auto, 1fr) 50px;
+  background-color: #1b2e1f;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 150px 2fr 250px;
+}
+
+header {
+  border-bottom: 1px solid rgb(194, 194, 194, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.logo {
+  font-family: "Fraunces";
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.profil {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #639922;
+}
+
+.profil img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-bar {
+  border-bottom: 1px solid rgb(194, 194, 194, 0.3);
+  border-right: 1px solid rgb(194, 194, 194, 0.3);
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.first-link {
+  background-color: #c6d94d;
+  padding: 6px 18px;
+  border-radius: 5px;
+}
+
+.first-link a {
+  color: #1b2e1f;
+}
+
+.nav-bar ul li a {
+  font-size: 12px;
+}
+
+.your-plants {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  border-bottom: 1px solid rgb(194, 194, 194, 0.3);
+  border-right: 1px solid rgb(194, 194, 194, 0.3);
+}
+
+.greetings {
+  margin-bottom: 35px;
+}
+
+.greetings p {
+  font-size: 0.9em;
+  color: rgb(182, 179, 179);
+}
+
+.greetings p::after {
+  content: "👋";
+}
+
+.greetings h1 {
+  font-family: "Fraunces";
+  font-weight: 800;
+}
+
+.plant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(194, 194, 194, 0.3);
+}
+
+.plant-item:last-child {
+  border-bottom: none;
+}
+
+.plant-img {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.plant-img img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #1b2e1f;
+}
+
+.state {
+  font-size: 0.8em;
+  color: rgb(182, 179, 179);
+}
+
+.urgent {
+  color: #d4a24c;
+}
+
+aside {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgb(194, 194, 194, 0.3);
+}
+
+.next-livraison,
+.advice-of-the-day {
+  background-color: #20351f;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  border: 1px solid rgb(194, 194, 194, 0.3);
+}
+
+.next-livraison {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.advice-of-the-day {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.badge {
+  text-transform: uppercase;
+  color: #a9bfa9;
+  font-size: 10px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+}
+
+.description {
+  color: #c6d94d;
+  font-size: 11px;
+}
+
+.tip {
+  font-size: 12px;
+  color: #dfe6d8;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 22px;
+  font-size: 12px;
+  color: #5f7060;
+}
